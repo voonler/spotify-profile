@@ -1,0 +1,48 @@
+/*BASE STYLES*/
+
+/*Variables*/
+:root{
+    --blue: #2d46b9;
+    --white: #ffffff;
+    --black: #000000;
+    --green1: #1ed760;
+    --green2: #1db954;
+    --gray1: #c1c3c6;
+    --gray2: #919496;
+    --gray3: #616467;
+    --hero-lightcoral1: #ef7674;
+    --hero-fieryrose2: #ec5766;
+    --hero-rustyred3:#da344d;
+}
+
+
+
+/*Overwrite browser defaults*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Allows padding and margin ajustments within a box without having the content leaving the box*/
+}
+
+html{
+    font-size: 10px;
+    /*Easier reference when utilizing rems*/
+}
+
+html, 
+body{
+    height: 100%;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /*Inherit the value from the parent*/
+}
+
+ul{
+    list-style: none;
+}
