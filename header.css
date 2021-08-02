@@ -155,6 +155,92 @@ header{
   }
 
   /*Make the toggler visible and be on top of the hamburger menu*/
-  .toggler:checked{
-      z-index: 1000;
-  }
+.toggler:checked{
+    z-index: 1001;
+}
+
+.toggler:checked + .hamburger-menu{
+    z-index: 1000;
+}
+
+.menu-overlay li,
+.menu-overlay-logo{
+    opacity: 0;
+    transform: translateX(100%); /*This */
+    transition: all 0.5s ease; /*How long do the li and logo elements take to return to its original position after being displaced on the x axis*/
+}
+
+.toggler:checked + .hamburger-menu + .menu > .menu-overlay li,
+.toggler:checked + .hamburger-menu + .menu > .menu-overlay .menu-overlay-logo {
+  transform: translateX(0); /*This shifts the li elements to the most left of the background-overlay*/
+  opacity: 1;
+}
+
+
+.menu-overlay li{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 650;
+    margin-bottom: 1rem; /*Adds a space of 1rem between each li element within the menu-overlay class*/
+}
+
+/*Time to make the li items in the menu-overlay class slide from right to left*/
+
+.menu-overlay li::nth-child(1){/*This chooses the 1st li item of the parent menu-overlay. Cool method to access items that have no specific individual classes*/
+    transition: transform 0.1s ease;
+}
+
+.menu-overlay li:nth-child(2){
+    transition: transform 0.2s ease;
+}
+
+.menu-overlay li:nth-child(3){
+    transition: transform 0.3s ease;
+}
+
+.menu-overlay li:nth-child(4){
+    transition: transform 0.4s ease;
+}
+
+.menu-overlay li:nth-child(5){
+    transition: transform 0.5s ease;
+}
+
+.menu-overlay li:nth-child(6){
+    transition: transform 0.6s ease;
+}
+
+.menu-overlay-logo{
+    transition: transform 0.6s ease;
+}
+
+/*Adds color to li links when hovered upon*/
+.menu-overlay li a:hover{
+    color: var(--green2);
+}
+
+/*Time to make our seperator visible on the background overlay*/
+.menu-overlay li:nth-child(4){
+    width: 2rem;
+    background: var(--white);
+    height: 0.15rem;
+    margin: 4rem 0;
+}
+
+/*Modify the last 2 li items due to difference in font size and weight. Here is a special method to do so*/
+.menu-overlay li:nth-last-child(-n + 2){
+    /* Using a formula (an + b). Description: a represents a cycle size, n is a counter (starts at 0), and b is an offset value. */
+    /*Takes the 2 last li items starting from the last child*/
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.menu-overlay li:last-child{
+    margin: 2rem 0;
+}
+
+.menu-overlay-logo img{
+    width: 9rem;
+    cursor: pointer;
+}
+
