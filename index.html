@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Li Ler's Favorite Hits</title>
+        <link rel="icon" href="images/favicon.ico">
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        > <!--Getting spotify's font from google's api-->
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="hero.css">
+        <link rel="stylesheet" href="albums.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="media-queries.css">
+    </head>
+    <body>
+        <!--HEADER-->
+        <!--We create two nav tag versions of the UI, one for desktop and one for mobile-->
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="images/spotify-logo.svg">
+                </div>
+                <!--This menu will be shown on mobile devices for robust responsiveness-->
+                <nav class="nav-mobile">
+                    <!--Profile-->
+                    <div class="profile">
+                        <img src="images/profile_spotify.jpg" class="profile-icon">
+                    </div>
+                
+                    <!--Hamburger Menu-->
+                    <div type="checkbox" class="togler"></div>
+                    <div class="hamburger-menu"></div>
+                    <div class="menu">
+                        <div class="menu-overlay">
+                            <ul>
+                                <li><a href="#">Premium</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Download</a></li>
+                                <li role="separator"></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                            <div class="menu-overlay-logo">
+                                <img src="images/spotify-logo.svg">
+                            </div>
+                        </div>
+                    </div>
+                </nav><!--Nav Mobile-->
+                <!--This is the menu for desktop-->
+                <nav class="nav-desktop">
+                    <!--Site menu-->
+                    <ul>
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li role="separator"></li>
+                    </ul>
+                    <!--Profile Menu-->
+                    <div class="profile-container">
+                        <input type="checkbox" class="dropdown-menu-toggler">
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile">
+                            <img src="images/profile_spotify.jpg">
+                        </div>
+                        <ul>
+                            <li>Profile</li>
+                            <li>
+                                <svg viewBox="0 0 1024 1024" class="profile-arrow">
+                                    <path d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"/>
+                                </svg>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav><!--Nav Desktop-->
+            </div><!--End of Header-->
+        </header>
+        <!--HERO-->
+        
+        <!--This is the area right below the header which establishes brand value-->
+        
+        <!--Section here is used to improve structure and organisation of code-->
+        <section class="hero">
+            <section class="hero-container">
+                <div class="hero-content">
+                    <small class="hero-small-text">Recently Experienced</small>
+                    <h1 class="hero-main">Jump back in</h1>
+                    <h3 class="hero-mid-text">Small snippets of your life at your fingertips</h3>
+                    <button class="hero-button">Don't stop believing</button>
+                </div>
+            </section>
+            <section class="albums">
+                <div class="albums-container">
+                    <div class="album-cards-container">
+                        <!--Lofi Coding-->
+                        <div class="album">
+                            <img src="images/loficode_pic.jpg">
+                            <div class="album-info">
+                                <h2>Mastering React, HTML5, CSS and Javascript</h2>
+                                <h4>Li Ler Voon</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of first album-->
+                        <!--Badminton-->
+                        <div class="album">
+                            <img src="images/badminton_pic.jpg">
+                            <div class="album-info">
+                                <h2>Reliving my love for badminton</h2>
+                                <h4>Li Ler Voon</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of second album-->
+                        <!--The Economist-->
+                        <div class="album">
+                            <img src="images/the_intelligence_pic.jpg">
+                            <div class="album-info">
+                                <h2>Listening to news from around the world</h2>
+                                <h4>The Economist</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of third album-->
+                        <!--Workout-->
+                        <div class="album">
+                            <img src="images/workout_pic.jpg">
+                            <div class="album-info">
+                                <h2>Slowly working out for those gains</h2>
+                                <h4>Li Ler Voon</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of forth album-->
+                        <!--Piano-->
+                        <div class="album">
+                            <img src="images/grandpiano_pic.png">
+                            <div class="album-info">
+                                <h2>Playing piano is the medicine to my mind</h2>
+                                <h4>Home</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of fifth album-->
+                        <!--Codenewbie-->
+                        <div class="album">
+                            <img src="images/codenewbie_pic.jpg">
+                            <div class="album-info">
+                                <h2>Gaining insights from seasoned software developers</h2>
+                                <h4>Codenewbie</h4>
+                                <a href="#">EXPERIENCE NOW</a>
+                            </div>
+                        </div><!--End of sixth album-->
+                    </div><!--End of album cards container-->
+                </div><!--End of albums container-->
+            </section><!--End of albums-->
+            <div class="nav-arrow">
+                <svg viewBox="0 0 1024 1024" class="nav-arrow">
+                    <path d="M476.455 806.696L95.291 425.532Q80.67 410.911 80.67 390.239t14.621-34.789 35.293-14.117 34.789 14.117L508.219 698.8l349.4-349.4q14.621-14.117 35.293-14.117t34.789 14.117 14.117 34.789-14.117 34.789L546.537 800.142q-19.159 19.159-38.318 19.159t-31.764-12.605z"/>
+                </svg>
+            </div>
+            
+        </section><!--End of Hero-->
+        <section class="mid-area">
+            <section class="mid-container">
+                <div class="mid-title">
+                    <h1>My name is Li Ler</h1><br>
+                    <h1>and I'm an aspiring frontend developer.</h1>
+                    <h2>This website was built using</h2>
+                </div>
+                <!--First Mystery Box-->
+                <div class="mid-mysteryBoxes">
+                    <img src="images/icons8-question-mark-30.png" alt="Question Mark">
+                    <div class="mystery-overlay">
+                        <div class="overlay-text">HTML5</div>
+                    </div>
+                </div>
+                <!--Second Mystery Box-->
+                <div class="mid-mysteryBoxes">
+                    <img src="images/icons8-question-mark-30.png" alt="Question Mark">
+                    <div class="mystery-overlay">
+                        <div class="overlay-text">CSS</div>
+                    </div>
+                </div>
+                <!--Third Mystery Box-->
+                <div class="mid-mysteryBoxes">
+                    <img src="images/icons8-question-mark-30.png" alt="Question Mark">
+                    <div class="mystery-overlay">
+                        <div class="overlay-text">Javascript</div>
+                    </div>
+                </div>
+            </section><!--End of mid container-->
+        </section><!--End of mid-area-->
+        <!--FOOTER-->
+        <footer>
+            <nav class="footer-nav">
+                <div class="logo-footer">
+                    <a href="#"><img src="images/spotify-logo.svg"></a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <!--Github-->
+                        <li>
+                            <a href=""><img src=""></a>
+                        </li>
+                        <!--LinkedIn-->
+                        <li>
+                            <a href=""><img src=""></a>
+                        </li>
+                        <!--Instragram-->
+                        <li>
+                            <a href=""><img src=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!--End footer nav-->
+        </footer>
+
+
+
+
+
+    </body>
+
+
+
+
+</html>
