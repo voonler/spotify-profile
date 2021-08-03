@@ -1,0 +1,48 @@
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+
+Media queries can be used to check many things, such as:
+
+width and height of the viewport
+width and height of the device
+orientation (is the tablet/phone in landscape or portrait mode?)
+resolution */
+
+
+
+/* These styles will be applied to screens that have a width of at least 992px */
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      height: 8rem;
+    }
+
+    .header-container{
+        width: 97rem;
+    }
+
+    .header-logo img{
+        width: 13rem;
+    }
+
+    .nav-desktop{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+}
+
+
+
+
+/*These styles will be used when screen has a width of at least 1200px*/
+@media screen and (min-width: 1200px) {
+    /*HEADER*/
+    .header-container{
+        max-width: 117rem;
+    }
+
+}

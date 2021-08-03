@@ -1,0 +1,76 @@
+/*HERO*/
+
+.hero{
+    background: rgb(239,118,116);
+    background: linear-gradient(90deg, rgba(239,118,116,1) 0%, rgba(236,87,102,1) 40%, rgba(218,52,77,1) 100%);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 25rem;
+}
+
+.hero-container{
+    padding: 24.5rem 1.5rem 0 1.5rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    position: relative;
+    left: 300px;
+    color: var(--white);
+    max-width: 350px; /*Allows word wrapping when text overflows out of the box*/
+}
+
+.hero-main1,
+.hero-main2
+ {
+    font-size: 8rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    line-height: 5rem;
+    letter-spacing: -0.3rem;
+  }
+
+.hero-small-text{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-mid-text{
+    font-size: 3rem;
+    font-weight: 1200;
+    margin-bottom: 10px;
+}
+
+.hero-button{
+    border: none;
+    border-radius: 3rem;
+    padding: 2rem 4rem;
+    color: var(--white);
+    background: var(--green2);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.hero-button:hover{
+    background: var(--green1);
+}
+
+
+
+
+
