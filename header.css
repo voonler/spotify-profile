@@ -247,7 +247,7 @@ header{
 /*Desktop Menu*/
 
 .nav-desktop{
-    /* display: none; */
+    display: none;
 }
 
 .nav-desktop ul li{

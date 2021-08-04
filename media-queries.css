@@ -9,7 +9,8 @@ resolution */
 
 
 
-/* These styles will be applied to screens that have a width of at least 992px */
+/* These styles will be applied to screens that have a width of at least 531px */
+
 @media screen and (min-width: 992px) {
     /* HEADER */
     header {
@@ -33,16 +34,16 @@ resolution */
     .nav-mobile{
         display: none;
     }
-}
+  }
+ 
 
 
 
 
-/*These styles will be used when screen has a width of at least 1200px*/
-@media screen and (min-width: 1200px) {
-    /*HEADER*/
-    .header-container{
-        max-width: 117rem;
-    }
 
-}
+  
+
+
+
+   
+

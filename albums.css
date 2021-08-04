@@ -1,22 +1,102 @@
 /*ALBUMS. Time to use CSS grids*/
 
-/* .albums{
+.albums{
     max-width: 1000px;
     max-height: 1000px;
-} */
+}
 
 .album-cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 15px;
+    column-gap: 15px;
+    row-gap: 10px;
     column-gap: 2rem;
     position: relative;
     top: 10rem;
-    margin-right: 7rem;
+    left: -3rem;
+    margin-right: 2rem;
+
+}
+
+.album{
+    box-sizing: border-box;
+    padding: none;
+    position: relative;
 }
 
 .album img{
     height: 250px;
     width: 250px;
+    box-shadow: 0.1rem 0.1rem 1.6rem -0.2rem rgba(0, 0, 0, 0.3);
 }
+
+.album img:hover{
+    cursor: pointer;
+}
+
+/*Adds transition when hovering over the img*/
+.album-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+    opacity: 0;
+    /*This deals with the hovering effect which shows song title, artist and button*/
+}
+
+  .album-info a {
+    position: relative;
+    /* bottom: -2rem; */
+  }
+
+  .album-info:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+/*Song title and artist name*/
+/*This line of code prevents text overflow by adding (...) ellipsis to the end*/
+.album-info h2,
+.album-info h4{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* Song title */
+.album-info h2 {
+    font-size: 1.75rem;
+    color: var(--gray2);
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+  
+/* Artist name */
+.album-info h4 {
+    font-size: 1.5rem;
+    color: var(--gray1);
+    margin: 1rem 0;
+  }
+
+/*Experience now button*/
+.album-info a{
+    font-size: 1.5rem;
+    color: var(--green2);
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.album-info:hover{
+    color: var(--green1);
+}
+
