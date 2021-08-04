@@ -50,7 +50,9 @@
     height: 100%;
     transition: all 0.4s ease;
     opacity: 0;
-    /*This deals with the hovering effect which shows song title, artist and button*/
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
 }
 
   .album-info a {
@@ -59,6 +61,7 @@
   }
 
   .album-info:hover {
+    /*This deals with the hovering effect which shows song title, artist and button*/
     opacity: 1;
     background: rgba(0, 0, 0, 0.8);
   }
@@ -67,7 +70,7 @@
 /*This line of code prevents text overflow by adding (...) ellipsis to the end*/
 .album-info h2,
 .album-info h4{
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow:hidden;
     text-overflow: ellipsis;
     width: 100%;

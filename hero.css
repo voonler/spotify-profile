@@ -16,8 +16,6 @@
     padding: 24.5rem 1.5rem 0 1.5rem;
 }
 
-
-
 .hero-content{
     display: flex;
     flex-direction:column;
@@ -70,6 +68,37 @@
 .hero-button:hover{
     background: var(--green1);
 }
+
+/*Styling the nav button at the bottom of the hero section*/
+
+.hero-container,
+.album-container{
+    position: relative;
+    top: -7.5rem;
+    left: -10rem;
+}
+
+.nav-arrow-container{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    border: solid 0.3rem var(--white);
+    border-radius: 50%;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite alternate; /*Moves the arrow up and down in 1s and alternates*/
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }} /*Moves the arrow up by 10px*/
+
+.nav-arrow{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--white);
+    padding: 0.3rem;
+}
+
 
 
 
