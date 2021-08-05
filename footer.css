@@ -1,0 +1,59 @@
+/*FOOTER*/
+
+footer{
+    background: var(--black);
+    height: 7rem;
+    width: 100%;
+
+}
+
+.footer-nav{
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-footer img{
+    width: 9rem;
+    margin-top: 0.7rem;
+}
+
+
+.social-icons ul{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+    margin-right: 5rem;
+}
+
+.social-icons ul li{
+    margin-right: 1.5rem;
+    padding: 1rem;
+    background: #222326;
+    border-radius: 50%;
+}
+
+.social-icons img{
+    width: 2.5rem;
+    background: var(--white);
+    display: inline;
+}
+
+.social-icons img:hover{
+    background: var(--green1);
+}
+
+/*Align icons side by side*/
+.logo-footer,
+.social-icons{
+    display: inline-flex;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-left: 6rem;
+}
+
+
+
+
+

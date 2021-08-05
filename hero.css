@@ -80,7 +80,7 @@
 
 .nav-arrow-container{
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 2%;
     border: solid 0.3rem var(--white);
     border-radius: 50%;

@@ -28,6 +28,7 @@ html{
     font-size: 10px;
     /*Easier reference when utilizing rems*/
     scroll-behavior: smooth;
+    /*Smooth transition when clicking the nav-arrow*/
 }
 
 html, 

@@ -1,5 +1,111 @@
-#mid-container{
-    width: 100vw;
-    height: 100vh;
-    background: var(--gray3);
+/*To prevent a div from being placed before another div
+Check if div have any width then set the width to 100% or auto
+Is the display type of div set to inline or inline-block or flex, remove that
+If div has any float, remove that
+Check if any div has a position property like absolute, remove that.*/
+
+.mid-container{
+    /* width: 100vw;
+    height: 100vh; */
+    position: relative;
+    margin-bottom: 10rem;
+
 }
+
+.mid-text{
+    margin-left: 20rem;
+}
+
+ .mid-text h1
+ {
+     font-size: 5rem;
+     font-weight: 800;
+     display: flex;
+ }
+
+ .mid-text h1:nth-child(1){
+     margin-top: 8rem;
+ }
+
+
+ /*Centering the mid-sub-text*/
+ .mid-sub-text h2{
+    font-size: 2.5rem;
+    color: var(--green2);
+    margin-top: 5rem;
+    text-align: center;
+ }
+
+ .mid-mysteryBoxes-container{
+ 
+     /* position: absolute;  */
+     /* transform: translateX(-50%);
+     bottom: 50%; */ 
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 5rem;
+ }
+
+ .mid-mysteryBox{
+    margin: auto;
+    position: relative; /*Parent (mid-mysteryBox) has relative whilst child (mystery-overlay) has absolute
+    This allows the text to be centered respectively in each box*/
+ }
+
+ .mystery-overlay{
+    font-size: 2.3rem;
+    font-weight: 700;
+    /*Centering the text in the image background*/
+    position: absolute;
+    /* left: 50%;
+    transform: translate(-50%, -140%); */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color:white;
+    transition: all 0.4s ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+ 
+ }
+
+ .mid-mysteryBox img{
+     background-color: var(--green1);
+     border: none;
+     border-radius: 1rem;
+     padding: 1.7rem 7rem; /*Styles the width and length of the image background*/
+     box-shadow: 0.1rem 0.1rem 1.6rem -0.2rem rgba(0, 0, 0, 0.3);
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+
+ .mid-mysteryBox:hover .mystery-overlay{
+     opacity: 1;
+     cursor: pointer;
+     background: var(--green2);
+     border-radius: 1rem;
+ }
+
+ /*Centering the text within the overlay*/
+ .overlay-text{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: center;
+ }
+
+
+
+
+
+
+
+
+
